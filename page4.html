@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Own Recipe!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-image: url('background5.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Courier New', Courier, monospace;
+            color: #333;
+        }
+
+        h2 {
+            background-color: #f98fc1;
+            text-align: center;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background-color: #f98fc1;
+            border: none;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #e877a6;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-control:focus {
+            border-color: #f98fc1;
+            box-shadow: 0 0 5px rgba(249, 143, 193, 0.5);
+        }
+
+        textarea::placeholder {
+            font-style: italic;
+            color: #aaa;
+        }
+
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.6); /* Black transparent background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-container h2 {
+            color: white;
+        }
+
+        .form-container label {
+            color: white;
+        }
+
+        .form-container .form-control {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-white fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="bear.png" width="50" height="50" class="rounded-circle" alt="Brand Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="page2.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page3.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="page4.html">Become a fairy!</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="🔍 Search" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5 mt-5">
+        <div class="form-container">
+            <h2>Become a <strong>Fairy</strong> and <strong>Share</strong> Your Recipes with the <strong>World</strong>!</h2>
+            <form>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="recipeName">Recipe Name</label>
+                        <input type="text" class="form-control" id="recipeName" placeholder="Kristmaxz KooKiez">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="recipeDate">Date (MM/DD/YYYY)</label>
+                        <input type="date" class="form-control" id="recipeDate">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="ingredients">Ingredients & Steps Needed</label>
+                        <textarea class="form-control" id="ingredients" rows="5" placeholder="2 cups sugar..."></textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="videoTutorial">Video Tutorial (Optional)</label>
+                        <input type="url" class="form-control" id="videoTutorial" placeholder="https://example.com">
+                    </div>
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Become a Fairy!</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
